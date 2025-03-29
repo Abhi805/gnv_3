@@ -255,30 +255,32 @@ export default function Home() {
       <div className="container-fluid py-5">
         {/* CTA Section */}
 
-        <div class="row g-4 align-items-stretch">
+        <div class="row g-4 align-items-stretch m-3">
 
-          <div class="col-sm-12 col-lg-6">
+         
             <section className="cta-section cat1 text-center bg-primary text-white py-5 rounded">
               <h3 className="fs-2 fw-bold">Are You Ready To Make Your Own Special Events?</h3>
               <button className="btn btn-light mt-3 fw-semibold shadow">Contact Now</button>
             </section>
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <section style={{ paddingTop: "35px" }} className="cta-section cat2 text-center bg-primary text-white rounded ">
-              <div className="text-center">
+            </div>
+            <div className="row m-3">
+           
+              <section style={{ paddingTop: "35px" }} className="cta-section cat2 text-center bg-primary text-white rounded ">
+                <div className="text-center">
 
-                <h2 className="fw-bold ">
-                  Our <strong className="">Valuable Clientele</strong>
-                </h2>
-                <p className="mt-2">
-                  GNV INDIA ENTERTAINMENT believes in creating exemplary Productions, Events & Weddings.
-                  Your event will be our masterpiece, no two will be the same…
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
+                  <h2 className="fw-bold ">
+                    Our <strong className="">Valuable Clientele</strong>
+                  </h2>
+                  <p className="mt-2">
+                    GNV INDIA ENTERTAINMENT believes in creating exemplary Productions, Events & Weddings.
+                    Your event will be our masterpiece, no two will be the same…
+                  </p>
+                </div>
+              </section>
+          
+            </div>
+         </div>
+       
 
       <div className="container-fluid mt-5">
         <div className="row">
