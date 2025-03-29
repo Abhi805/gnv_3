@@ -15,3 +15,11 @@
     margin-top: 40px; /* Upper navbar ki height ke hisaab se adjust karo */
   }
   
+.shadow_111{
+
+  margin: 0 23px;
+
+
+
+box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}

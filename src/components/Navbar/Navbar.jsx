@@ -1,6 +1,6 @@
 // import React from 'react';
 // import { Link } from 'react-router-dom';
-// import './navbar.css';
+//
 
 // export default function Navbar() {
 //   return (
@@ -62,11 +62,12 @@
 
 
 import React from "react";
-
+import './navbar.css';
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{ background: "white", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}>
-            <div className="container">
+      <div className="container">
+          <nav className=" navbar navbar-expand-lg navbar-light fixed-top shadow_111 " style={{top:"2px" ,background: "white",}}>
+            <div className="container-fluid ">
                 <a className="navbar-brand" href="#">
                     <img src="logo.png" alt="Logo" height="40" />
                 </a>
@@ -85,6 +86,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+      </div>
     );
 };
 
