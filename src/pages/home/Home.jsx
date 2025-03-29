@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import { Link } from 'react-router-dom';
 
 const cardData = [
   { title: "Wedding Planner", text: "anytime anywhere ", img: "/assets/home/images/cnt_2/g2.jpg" },
@@ -31,97 +32,72 @@ const cardData2 = [
 
 ]
 
-const cardData3 = [
-  { title: "Wedding Planner", text: "anytime anywhere ", img: "/assets/home/images/cnt_2/g2.jpg" },
-  { title: "Govt. Events", text: "more then 200 teams", img: "/assets/home/images/cnt_2/g7.jpg" },
-  { title: "Celebrity Managment", text: "anytime anywhere", img: "/assets/home/images/cnt_2/g11.jpg" },
-  { title: "Corporate Events", text: "the best & perfect venues", img: "/assets/home/images/cnt_2/g16.jpg" },
-  { title: "Sports Events", text: "We make you perfect event", img: "/assets/home/images/cnt_2/g27.jpg" },
-  { title: "Road Shows", text: "the best & perfect venues", img: "/assets/home/images/cnt_2/g25.jpg" },
-  { title: "Theme Parties", text: "We have million ideas", img: "/assets/home/images/cnt_2/g28.jpg" },
-  { title: "Cultural Events", text: "We think out of the box", img: "/assets/home/images/cnt_2/g8.jpg" },
-  { title: "Wedding Planner", text: "anytime anywhere ", img: "/assets/home/images/cnt_2/g2.jpg" },
-  { title: "Govt. Events", text: "more then 200 teams", img: "/assets/home/images/cnt_2/g7.jpg" },
-  { title: "Celebrity Managment", text: "anytime anywhere", img: "/assets/home/images/cnt_2/g11.jpg" },
-  { title: "Corporate Events", text: "the best & perfect venues", img: "/assets/home/images/cnt_2/g16.jpg" },
-  { title: "Sports Events", text: "We make you perfect event", img: "/assets/home/images/cnt_2/g27.jpg" },
-  { title: "Road Shows", text: "the best & perfect venues", img: "/assets/home/images/cnt_2/g25.jpg" },
-  { title: "Theme Parties", text: "We have million ideas", img: "/assets/home/images/cnt_2/g28.jpg" },
-  { title: "Cultural Events", text: "We think out of the box", img: "/assets/home/images/cnt_2/g8.jpg" },
-]
+
 
 
 export default function Home() {
   return (
     <div className='home'>
       <div
-        id="carouselExampleCaptions"
-        className="carousel slide"
-        data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to={0}
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          />
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to={1}
-            aria-label="Slide 2"
-          />
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to={2}
-            aria-label="Slide 3"
-          />
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="/assets/home/images/cnt_1/g14.jpg" className="d-block w-100" alt="Slide 1" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="/assets/home/images/cnt_1/g41.jpg" className="d-block w-100" alt="Slide 2" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="/assets/home/images/cnt_1/slider1.jpg" className="d-block w-100" alt="Slide 3" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
+  id="carouselExampleCaptions"
+  className="carousel slide"
+  data-bs-ride="carousel">
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={1} aria-label="Slide 2" />
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={2} aria-label="Slide 3" />
+  </div>
+  <div className="carousel-inner">
+    {/* Slide 1 */}
+    <div className="carousel-item active">
+      <div className="carousel-image">
+        <img src="/assets/home/images/cnt_1/g14.jpg" className="d-block w-100" alt="Event Decoration" loading="lazy" />
+        <div className="overlay"></div> {/* Overlay Added */}
       </div>
+      <div className="carousel-caption">
+        <h5>First Slide Title</h5>
+        <p>Your text here for the first slide.</p>
+      </div>
+    </div>
+
+    {/* Slide 2 */}
+    <div className="carousel-item">
+      <div className="carousel-image">
+        <img src="/assets/home/images/cnt_1/g41.jpg" className="d-block w-100" alt="Slide 2" />
+        <div className="overlay"></div> {/* Overlay Added */}
+      </div>
+      <div className="carousel-caption">
+        <h5>Second Slide Title</h5>
+        <p>Your text here for the second slide.</p>
+      </div>
+    </div>
+
+    {/* Slide 3 */}
+    <div className="carousel-item">
+      <div className="carousel-image">
+        <img src="/assets/home/images/cnt_1/slider1.jpg" className="d-block w-100" alt="Slide 3" />
+        <div className="overlay"></div> {/* Overlay Added */}
+      </div>
+      <div className="carousel-caption">
+        <h5>Third Slide Title</h5>
+        <p>Your text here for the third slide.</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Previous Button */}
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true" />
+    <span className="visually-hidden">Previous</span>
+  </button>
+
+  {/* Next Button */}
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true" />
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+
       {/* Our Services Section */}
       <div class="container container_2 px-3">
         <p class="sub-title">Our services</p>
@@ -135,10 +111,7 @@ export default function Home() {
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
             <img src="/assets/home/images/cnt_1/slider1.jpg" className="d-block w-100" alt="Slide 3" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+         
           </div>
 
         </div>
@@ -313,62 +286,54 @@ export default function Home() {
 
           {/* Right Section - Second Carousel */}
           <div className="col">
-           
-              <div className="row">
-                <div className="col col-img">
+
+            <div className="row">
+              <div className="col col-img">
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                </div>
               </div>
-              <div className="row">
-                <div className="col col-img">
+            </div>
+            <div className="row">
+              <div className="col col-img">
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                </div>
-              </div>      <div className="row">
-                <div className="col col-img">
-                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                </div>
               </div>
-              <div className="row">
-                <div className="col col-img">
+            </div>      <div className="row">
+              <div className="col col-img">
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                </div>
               </div>
-              <div className="row">
-                <div className="col col-img-2">
+            </div>
+            <div className="row">
+              <div className="col col-img">
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
-                
-                </div>
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
               </div>
-         
+            </div>
+            <div className="row">
+              <div className="col col-img-2 ">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
 
 
 
-
-      {/* Testimonial */}
-      <section className="testimonial">
-        <h3>Client Says</h3>
-        <p>
-          "Total Events values money, provides great services, and creates an
-          everlasting experience!"
-        </p>
-      </section>
-
+    
+           
     </div >
   )
 }

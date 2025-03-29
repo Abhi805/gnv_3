@@ -1,0 +1,24 @@
+.useful-links a {
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .useful-links a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: translateX(5px); /* Moves the text slightly to the right */
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 80%; /* Adjust Width */
+    margin: auto; /* Center Align */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
