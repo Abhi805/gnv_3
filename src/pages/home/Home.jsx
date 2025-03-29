@@ -257,30 +257,30 @@ export default function Home() {
 
         <div class="row g-4 align-items-stretch m-3">
 
-         
-            <section className="cta-section cat1 text-center bg-primary text-white py-5 rounded">
-              <h3 className="fs-2 fw-bold">Are You Ready To Make Your Own Special Events?</h3>
-              <button className="btn btn-light mt-3 fw-semibold shadow">Contact Now</button>
-            </section>
-            </div>
-            <div className="row m-3">
-           
-              <section style={{ paddingTop: "35px" }} className="cta-section cat2 text-center bg-primary text-white rounded ">
-                <div className="text-center">
 
-                  <h2 className="fw-bold ">
-                    Our <strong className="">Valuable Clientele</strong>
-                  </h2>
-                  <p className="mt-2">
-                    GNV INDIA ENTERTAINMENT believes in creating exemplary Productions, Events & Weddings.
-                    Your event will be our masterpiece, no two will be the same…
-                  </p>
-                </div>
-              </section>
-          
+          <section className="cta-section cat1 text-center bg-primary text-white py-5 rounded">
+            <h3 className="fs-2 fw-bold">Are You Ready To Make Your Own Special Events?</h3>
+            <button className="btn btn-light mt-3 fw-semibold shadow">Contact Now</button>
+          </section>
+        </div>
+        <div className="row m-3">
+
+          <section style={{ paddingTop: "35px" }} className="cta-section cat2 text-center bg-primary text-white rounded ">
+            <div className="text-center">
+
+              <h2 className="fw-bold ">
+                Our <strong className="">Valuable Clientele</strong>
+              </h2>
+              <p className="mt-2">
+                GNV INDIA ENTERTAINMENT believes in creating exemplary Productions, Events & Weddings.
+                Your event will be our masterpiece, no two will be the same…
+              </p>
             </div>
-         </div>
-       
+          </section>
+
+        </div>
+      </div>
+
 
       <div className="container-fluid mt-5">
         <div className="row">
@@ -312,28 +312,47 @@ export default function Home() {
           </div>
 
           {/* Right Section - Second Carousel */}
-          <div className="col-lg-6">
-            <div id="carouselRight" className="carousel slide" data-bs-touch="false" data-bs-interval="2000">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src="/assets/home/images/cnt_1/g14.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/assets/home/images/cnt_1/g41.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/assets/home/images/cnt_1/slider1.jpg" className="d-block w-100" alt="..." />
+          <div className="col">
+           
+              <div className="row">
+                <div className="col col-img">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
                 </div>
               </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselRight" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselRight" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
+              <div className="row">
+                <div className="col col-img">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                </div>
+              </div>      <div className="row">
+                <div className="col col-img">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col col-img">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col col-img-2">
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                <img src="/assets/home/images/cnt_2/g11.jpg" class="card-img-top" alt="..." />
+                
+                </div>
+              </div>
+         
           </div>
         </div>
       </div>
