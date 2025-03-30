@@ -1,25 +1,56 @@
 /* Upper navbar ko fix karne ke liye */
 .nav_t {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #960909; /* Apne design ke hisaab se color change karo */
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #960909; /* Apne design ke hisaab se color change karo */
+  z-index: 1000;
   color: white;
-  
-  }
-  
-  /* Niche wale navbar ke liye koi position fixed nahi rakhenge */
-  .nav_b {
-    margin-top: 40px; /* Upper navbar ki height ke hisaab se adjust karo */
-  }
-  
-.shadow_111{
+}
 
+/* Niche wale navbar ke liye koi position fixed nahi rakhenge */
+.nav_b {
+  margin-top: 40px; /* Upper navbar ki height ke hisaab se adjust karo */
+}
+.navbar-nav .nav-link{
+  font-size: large;
+  font-weight: 600;
+
+}
+.navbar-nav .nav-link:hover{
+  color: rgb(5, 84, 255);
+}
+
+.shadow_111 {
   margin: 0 23px;
 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.custom-link {
+  position: relative;
+  color: #D90429;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+.custom-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #D90429;
+  transition: width 0.3s ease, left 0.3s ease;
+}
 
-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+.custom-link:hover {
+  color: #A50021;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+  left: 0;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import { Link } from "react-router-dom";
+
 
 const cardData = [
   {
@@ -122,77 +122,173 @@ const cardData2 = [
 export default function Home() {
   return (
     <div className="home" style={{ marginTop: "65px" }}>
-     <div className="container-lg shadow-lg shad py-4">
-      <div className="row justify-content-end">
-        {/* Empty Column to Push Image Right */}
-        <div className="col-md-6"></div>
-        
-        {/* Carousel Column */}
-        <div className="col-md-6 " style={{width:"60%"}}>
-          <div
-            id="carouselExampleCaptions"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            {/* Indicators */}
-            <div className="carousel-indicators">
-              {[0, 1, 2].map((index) => (
-                <button
-                  key={index}
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to={index}
-                  className={index === 0 ? "active" : ""}
-                  aria-current={index === 0 ? "true" : "false"}
-                  aria-label={`Slide ${index + 1}`}
-                />
-              ))}
-            </div>
-            
-            {/* Carousel Inner */}
-            <div className="carousel-inner">
-              {["/assets/home/images/cnt_1/g14.jpg", "/assets/home/images/cnt_1/g41.jpg", "/assets/home/images/cnt_1/slider1.jpg"].map((image, index) => (
-                <div
-                  key={index}
-                  className={`carousel-item ${index === 0 ? "active" : ""}`}
+      <div className="container-lg shadow  py-4">
+        <div className="row">
+          {/* Logo Image on Left */}
+          <div className="col-md-6 text-start mt-4">
+      
+            <h1
+              style={{
+                color: "#D90429",
+                fontStyle: "italic",
+                fontSize: "50px",
+                marginTop: "20px",
+                textAlign: "center",
+                marginBottom: "-0.5rem",
+              }}
+            >
+              <span>G</span>nv India
+            </h1>
+            <h2
+              style={{
+                color: "#D90429",
+                fontStyle: "italic",
+                fontSize: "55px",
+                textAlign: "center",
+              }}
+            >
+              Entertainment
+            </h2>
+
+            <h3
+              style={{
+                color: "#D90429",
+                fontStyle: "italic",
+
+                textAlign: "center",
+              }}
+            >
+              Event | Promotions | Exhibition
+            </h3>
+            <ul className="navbar-nav ms-auto mt-5 ">
+              <li className="nav-item btn_2 d-flex mb-2 align-items-center gap-4">
+                <a
+                  className="btn"
+                  style={{
+                    backgroundColor: "#d90429",
+                    color: "white",
+                    borderRadius: "5px",
+                    padding: "8px 15px",
+                  }}
+                  href="tel:+9009081222"
                 >
-                  <img
-                    src={image}
-                    className="d-block w-100 img-fluid"
-                    style={{ marginLeft: "auto", marginRight: "0",    minHeight: "150px" , maxHeight: "450px", objectFit: "cover" }}
-                    alt={`Slide ${index + 1}`}
+                  Get a Quote 9009-081-222
+                </a>
+
+                <a
+                  className="btn"
+                  style={{
+                    backgroundColor: "#d90429",
+                    color: "white",
+                    borderRadius: "5px",
+                    padding: "8px 15px",
+                  }}
+                  href="mailto:gnvindia7@gmail.com"
+                >
+                  gnvindia7@gmail.com
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="btn btn_1 d-flex justify-content-center align-items-center"
+                  style={{
+                    backgroundColor: "#d90429",
+                    color: "white",
+                    borderRadius: "5px",
+                    padding: "8px 15px",
+                    width: "96%",
+                  }}
+                  href="#"
+                >
+                  Get a Meeting
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Carousel on Right */}
+          <div className="col-md-6 text-end">
+            <div
+              id="carouselExampleCaptions"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              {/* Indicators */}
+              <div className="carousel-indicators">
+                {[0, 1, 2].map((index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to={index}
+                    className={index === 0 ? "active" : ""}
+                    aria-current={index === 0 ? "true" : "false"}
+                    aria-label={`Slide ${index + 1}`}
                   />
-                  <div className="carousel-caption">
-                    <h5>{`Slide ${index + 1} Title`}</h5>
-                    <p>{`Your text for slide ${index + 1}.`}</p>
+                ))}
+              </div>
+
+              {/* Carousel Inner */}
+              <div className="carousel-inner">
+                {[
+                  "/assets/home/images/cnt_1/g14.jpg",
+                  "/assets/home/images/cnt_1/g41.jpg",
+                  "/assets/home/images/cnt_1/slider1.jpg",
+                ].map((image, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  >
+                    <img
+                      src={image}
+                      className="d-block w-100 img-fluid"
+                      style={{
+                        marginLeft: "auto",
+                        marginRight: "0",
+                        minHeight: "150px",
+                        maxHeight: "450px",
+                        objectFit: "cover",
+                      }}
+                      alt={`Slide ${index + 1}`}
+                    />
+                    <div className="carousel-caption">
+                      <h5>{`Slide ${index + 1} Title`}</h5>
+                      <p>{`Your text for slide ${index + 1}.`}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+
+              {/* Controls */}
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
-            
-            {/* Controls */}
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
-    </div>
 
       {/* Our Services Section */}
       <div
