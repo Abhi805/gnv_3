@@ -227,6 +227,21 @@ body {
 }
 
 
+.btn-hover {
+    background-color: #d90429;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    background-color:#d90404;
+    color: #ffffff;
+   
+  }
+  
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 
-
 const cardData = [
   {
     title: "Wedding Planner",
@@ -126,13 +125,12 @@ export default function Home() {
         <div className="row">
           {/* Logo Image on Left */}
           <div className="col-md-6 text-start mt-4">
-      
             <h1
               style={{
                 color: "#D90429",
                 fontStyle: "italic",
-                fontSize: "50px",
-                marginTop: "20px",
+                fontSize: "clamp(40px, 5vw, 55px)", // Responsive font size
+                marginTop: "clamp(2px, 0.5vw, 20px)", // Responsive margin
                 textAlign: "center",
                 marginBottom: "-0.5rem",
               }}
@@ -143,7 +141,7 @@ export default function Home() {
               style={{
                 color: "#D90429",
                 fontStyle: "italic",
-                fontSize: "55px",
+                fontSize: "clamp(40px, 5vw, 55px)", // Responsive font size
                 textAlign: "center",
               }}
             >
@@ -161,44 +159,19 @@ export default function Home() {
               Event | Promotions | Exhibition
             </h3>
             <ul className="navbar-nav ms-auto mt-5 ">
-              <li className="nav-item btn_2 d-flex mb-2 align-items-center gap-4">
-                <a
-                  className="btn"
-                  style={{
-                    backgroundColor: "#d90429",
-                    color: "white",
-                    borderRadius: "5px",
-                    padding: "8px 15px",
-                  }}
-                  href="tel:+9009081222"
-                >
-                  Get a Quote 9009-081-222
-                </a>
-
-                <a
-                  className="btn"
-                  style={{
-                    backgroundColor: "#d90429",
-                    color: "white",
-                    borderRadius: "5px",
-                    padding: "8px 15px",
-                  }}
-                  href="mailto:gnvindia7@gmail.com"
-                >
+              <li className="nav-item btn_2 d-flex flex-wrap justify-content-center gap-3 mb-2">
+                <a className="btn btn-hover" href="mailto:gnvindia7@gmail.com">
                   gnvindia7@gmail.com
+                </a>
+                <a className="btn btn-hover" href="tel:+9009081222">
+                  Get a Quote 9009-081-222
                 </a>
               </li>
 
               <li className="nav-item">
                 <a
-                  className="btn btn_1 d-flex justify-content-center align-items-center"
-                  style={{
-                    backgroundColor: "#d90429",
-                    color: "white",
-                    borderRadius: "5px",
-                    padding: "8px 15px",
-                    width: "96%",
-                  }}
+                  className="btn btn-hover btn_1 d-flex justify-content-center align-items-center"
+                  style={{ width: "100%", marginBottom: "8px" }}
                   href="#"
                 >
                   Get a Meeting
@@ -213,6 +186,8 @@ export default function Home() {
               id="carouselExampleCaptions"
               className="carousel slide"
               data-bs-ride="carousel"
+              data-bs-interval="1500"
+              data-bs-pause="false"
             >
               {/* Indicators */}
               <div className="carousel-indicators">
@@ -232,9 +207,9 @@ export default function Home() {
               {/* Carousel Inner */}
               <div className="carousel-inner">
                 {[
-                  "/assets/home/images/cnt_1/g14.jpg",
-                  "/assets/home/images/cnt_1/g41.jpg",
-                  "/assets/home/images/cnt_1/slider1.jpg",
+                  "/assets/home/images/cnt_1/g12.jpg",
+                  "/assets/home/images/cnt_1/g17.jpg",
+                  "/assets/home/images/cnt_1/g28.jpg",
                 ].map((image, index) => (
                   <div
                     key={index}
@@ -252,10 +227,10 @@ export default function Home() {
                       }}
                       alt={`Slide ${index + 1}`}
                     />
-                    <div className="carousel-caption">
+                    {/* <div className="carousel-caption">
                       <h5>{`Slide ${index + 1} Title`}</h5>
                       <p>{`Your text for slide ${index + 1}.`}</p>
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>
@@ -475,61 +450,58 @@ export default function Home() {
         <div className="row">
           {/* Left Section - Carousel */}
           <div className="col-lg-6">
-            <div className="row">
-              <div
-                id="carouselLeft"
-                className="carousel slide"
-                data-bs-touch="false"
-                data-bs-interval="2000"
-              >
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img
-                      src="/assets/home/images/cnt_1/g14.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="/assets/home/images/cnt_1/g41.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="/assets/home/images/cnt_1/slider1.jpg"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/home/images/cnt_2/g11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
                 </div>
-                <button
-                  className="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselLeft"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselLeft"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/home/images/cnt_2/g32.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/home/images/cnt_2/g34.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
 
