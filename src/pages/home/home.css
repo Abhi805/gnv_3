@@ -207,6 +207,10 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 0px -80px, rgba(0, 0, 0, 0.3) 0px 30px 60px -150px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -80px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;   */
 }
+
+  
+
+
 .shadow_12{
     margin-top: 50px;
     padding: 20px;
@@ -216,22 +220,9 @@ body {
     padding: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -80px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;  
 }
-.caroimg {
-    width: 100%; /* Full width */
-    max-width: 500px; /* Maximum width limit */
-    height: 550px; /* Fixed height */
-    overflow: hidden; /* Extra content hide */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.caroimg img {
-    width: 100%; /* Image ko pura box fill karne do */
-    height: 100%; /* Height ko bhi pura cover karne do */
-    object-fit: cover; /* Image stretch na ho, properly fit ho */
-    border-radius: 10px; /* Optional: Rounded corners */
-}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

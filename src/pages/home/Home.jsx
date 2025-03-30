@@ -74,7 +74,6 @@ const cardData = [
     text: "anytime anywhere ",
     img: "/assets/home/images/cnt_2/g2.jpg",
   },
-
 ];
 
 const cardData2 = [
@@ -122,91 +121,56 @@ const cardData2 = [
 
 export default function Home() {
   return (
-    <div className="home" style={{marginTop:"65px"}}>
-      <div className="container-lg shadow_1">
-        <div className="col">
-          
-        </div>
-        <div className="col shadow_12">
+    <div className="home" style={{ marginTop: "65px" }}>
+     <div className="container-lg shadow-lg shad py-4">
+      <div className="row justify-content-end">
+        {/* Empty Column to Push Image Right */}
+        <div className="col-md-6"></div>
+        
+        {/* Carousel Column */}
+        <div className="col-md-6 " style={{width:"60%"}}>
           <div
             id="carouselExampleCaptions"
-            className="carousel slide caroimg"
+            className="carousel slide"
             data-bs-ride="carousel"
           >
+            {/* Indicators */}
             <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to={0}
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              />
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to={1}
-                aria-label="Slide 2"
-              />
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to={2}
-                aria-label="Slide 3"
-              />
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to={index}
+                  className={index === 0 ? "active" : ""}
+                  aria-current={index === 0 ? "true" : "false"}
+                  aria-label={`Slide ${index + 1}`}
+                />
+              ))}
             </div>
+            
+            {/* Carousel Inner */}
             <div className="carousel-inner">
-              {/* Slide 1 */}
-              <div className="carousel-item active">
-                <div className="carousel-image">
+              {["/assets/home/images/cnt_1/g14.jpg", "/assets/home/images/cnt_1/g41.jpg", "/assets/home/images/cnt_1/slider1.jpg"].map((image, index) => (
+                <div
+                  key={index}
+                  className={`carousel-item ${index === 0 ? "active" : ""}`}
+                >
                   <img
-                    src="/assets/home/images/cnt_1/g14.jpg"
-                    className="d-block w-100"
-                    alt="Event Decoration"
-                    loading="lazy"
+                    src={image}
+                    className="d-block w-100 img-fluid"
+                    style={{ marginLeft: "auto", marginRight: "0",    minHeight: "150px" , maxHeight: "450px", objectFit: "cover" }}
+                    alt={`Slide ${index + 1}`}
                   />
-                  <div className="overlay"></div> {/* Overlay Added */}
+                  <div className="carousel-caption">
+                    <h5>{`Slide ${index + 1} Title`}</h5>
+                    <p>{`Your text for slide ${index + 1}.`}</p>
+                  </div>
                 </div>
-                <div className="carousel-caption">
-                  <h5>First Slide Title</h5>
-                  <p>Your text here for the first slide.</p>
-                </div>
-              </div>
-
-              {/* Slide 2 */}
-              <div className="carousel-item">
-                <div className="carousel-image">
-                  <img
-                    src="/assets/home/images/cnt_1/g41.jpg"
-                    className="d-block w-100"
-                    alt="Slide 2"
-                  />
-                  <div className="overlay"></div> {/* Overlay Added */}
-                </div>
-                <div className="carousel-caption">
-                  <h5>Second Slide Title</h5>
-                  <p>Your text here for the second slide.</p>
-                </div>
-              </div>
-
-              {/* Slide 3 */}
-              <div className="carousel-item">
-                <div className="carousel-image">
-                  <img
-                    src="/assets/home/images/cnt_1/slider1.jpg"
-                    className="d-block w-100"
-                    alt="Slide 3"
-                  />
-                  <div className="overlay"></div> {/* Overlay Added */}
-                </div>
-                <div className="carousel-caption">
-                  <h5>Third Slide Title</h5>
-                  <p>Your text here for the third slide.</p>
-                </div>
-              </div>
+              ))}
             </div>
-
-            {/* Previous Button */}
+            
+            {/* Controls */}
             <button
               className="carousel-control-prev"
               type="button"
@@ -216,8 +180,6 @@ export default function Home() {
               <span className="carousel-control-prev-icon" aria-hidden="true" />
               <span className="visually-hidden">Previous</span>
             </button>
-
-            {/* Next Button */}
             <button
               className="carousel-control-next"
               type="button"
@@ -230,9 +192,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
 
       {/* Our Services Section */}
-      <div class="container-fluid shadow_112 container_2 px-3" style={{marginTop:"36px"}}>
+      <div
+        class="container-fluid shadow_112 container_2 px-3"
+        style={{ marginTop: "36px" }}
+      >
         <p class="sub-title">Our services</p>
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
