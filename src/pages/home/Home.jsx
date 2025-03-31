@@ -270,11 +270,14 @@ export default function Home() {
         class="container-fluid shadow_112 container_2 pb-5 "
         style={{ marginTop: "36px" }}
       >
-        <p class="sub-title" style={{fontSize:"45px",color:"#d90429"}}>Our services</p>
+        <p class="sub-title" style={{fontSize:"45px",color:"#d90429"}}><u>Our services</u></p>
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12" style={{paddingRight:"60px",paddingLeft:"50px"}}>
             <div class="section-pragraph text-start">
-              <h2 class="big-title">
+            <h2 style={{color:"#d90429"}} class="big-title">
+                <strong>GnvIndia <br /> Entertainment</strong>
+              </h2>
+              <h2  style={{color:"#d90429"}}  class="big-title">
                 <strong>No.1</strong> Events Management
               </h2>
               <p className="lorem mt-4 siz">

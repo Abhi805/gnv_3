@@ -231,7 +231,10 @@ body {
 
 .shadow_112{
     padding: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -80px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;  
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 20px 50px -20px,  /* Bottom Shadow कम किया */
+    rgba(0, 0, 0, 0.2) 0px 1px 2px -20px,  /* Shadow Effect को हल्का किया */
+    rgba(10, 37, 64, 0.25) 0px -1px 5px 2px inset;  /* Inset Shadow को Soft किया */
 }
 
 .shad{
@@ -240,7 +243,11 @@ body {
 
 .shap{
     width: 98%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -80px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;  
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 20px 50px -20px,  /* Bottom Shadow कम किया */
+    rgba(0, 0, 0, 0.2) 0px 10px 20px -20px,  /* Shadow Effect को हल्का किया */
+    rgba(10, 37, 64, 0.25) 0px -1px 5px 1px inset;  /* Inset Shadow को Soft किया */
+    
 }
 .btn_1{
     text-align: center;
