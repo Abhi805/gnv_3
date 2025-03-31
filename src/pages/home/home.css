@@ -53,7 +53,7 @@
     color: black;
 }
 .carousel-item img {
-    width: 100%;
+    width: 50%;
     height: 86vh; /* Full screen ka 80% height */
     object-fit: cover; /* Image ko crop hone se bachayega */
   }
@@ -119,6 +119,9 @@
     transform: translateY(-5px);
     box-shadow: rgba(146, 27, 27, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
+}
+.lop{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -80px, rgba(10, 37, 64, 0.35) 0px -1px 6px 0px inset;
 }
 
 
@@ -288,3 +291,9 @@ body {
         height: 300px; /* Mobile pe aur chhoti height */
     }
 }
+
+@media (max-width: 576px) { /* 576px से छोटी स्क्रीन के लिए */
+    .btn_1 {
+      width: 100% !important;
+    }
+  }

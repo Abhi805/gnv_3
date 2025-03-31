@@ -121,10 +121,10 @@ const cardData2 = [
 export default function Home() {
   return (
     <div className="home" style={{ marginTop: "80px" }}>
-      <div className="container-fluid  shap py-4">
+      <div className="container-fluid   shap py-4">
         <div className="row">
           {/* Logo Image on Left */}
-          <div className="col-md-6 text-start mt-6">
+          <div className="col-md-6 col-sm-12 col-12 col-lg-6 text-start  mt-3 mt-md-5 custom-margin" style={{marginTop:"71px"}}>
             <h1
               style={{
                 color: "#D90429",
@@ -142,7 +142,7 @@ export default function Home() {
                 color: "#D90429",
                 fontStyle: "italic",
                 fontSize: "clamp(40px, 5vw, 55px)", // Responsive font size
-                textAlign: "center",
+                textAlign: "center", 
               }}
             >
               Entertainment
@@ -168,10 +168,10 @@ export default function Home() {
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item d-flex justify-content-center">
                 <a
                   className="btn btn-hover btn_1 d-flex justify-content-center align-items-center"
-                  style={{ width: "100%", marginBottom: "8px" }}
+                  style={{ width: "80%", marginBottom: "8px" }}
                   href="#"
                 >
                   Get a Meeting
@@ -270,14 +270,21 @@ export default function Home() {
         class="container-fluid shadow_112 container_2 pb-5 "
         style={{ marginTop: "36px" }}
       >
-        <p class="sub-title" style={{fontSize:"45px",color:"#d90429"}}><u>Our services</u></p>
+        <p class="sub-title" style={{ fontSize: "45px", color: "#d90429" }}>
+          <u>Our services</u>
+        </p>
         <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12" style={{paddingRight:"60px",paddingLeft:"50px"}}>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12"
+            style={{ paddingRight: "60px", paddingLeft: "50px" }}
+          >
             <div class="section-pragraph text-start">
-            <h2 style={{color:"#d90429"}} class="big-title">
-                <strong>GnvIndia <br /> Entertainment</strong>
+              <h2 style={{ color: "#d90429" }} class="big-title">
+                <strong>
+                  GnvIndia <br /> Entertainment
+                </strong>
               </h2>
-              <h2  style={{color:"#d90429"}}  class="big-title">
+              <h2 style={{ color: "#d90429" }} class="big-title">
                 <strong>No.1</strong> Events Management
               </h2>
               <p className="lorem mt-4 siz">
@@ -289,7 +296,10 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12" style={{paddingRight:"60px",paddingLeft:"65px"}}>
+          <div
+            className="col-lg-6 col-md-12 col-sm-12"
+            style={{ paddingRight: "60px", paddingLeft: "65px" }}
+          >
             <img
               src="/assets/home/images/cnt_1/h91.webp"
               className="d-block w-100"
@@ -449,15 +459,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid shad mar p-5 ">
+      <div className="container-fluid shad mar p-5">
         <div className="row d-flex justify-content-center">
           {/* Left Section - First Carousel */}
-          <div className="col-lg-6 col-md-6 col-sm-12 mb-2">
+          <div className="col-lg-6 col-md-6 col-sm-12 mb-2 lop">
+          <h2 style={{textAlign:"center"}} >TESTIMONIAL</h2>
             <div
               id="carouselExampleControls"
               className="carousel slide"
               data-bs-ride="carousel"
-         
               data-bs-interval="1500"
               data-bs-pause="false"
             >
@@ -515,14 +525,14 @@ export default function Home() {
           </div>
 
           {/* Right Section - Second Carousel */}
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 mb-2 shadow-lg">
+            <h2 style={{textAlign:"center"}} >Our Respectable Client</h2>
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
               data-bs-ride="carousel"
-                data-bs-interval="2000"
+              data-bs-interval="2000"
               data-bs-pause="false"
-              
             >
               <div className="carousel-indicators">
                 <button
@@ -549,7 +559,16 @@ export default function Home() {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src="/assets/home/images/cnt_2/g30.jpg"
+                    src="/assets/home/images/cnt_2/prt2.png"
+                    className="d-block w-100 img-fluid"
+                    alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
+                  />
+                  
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="/assets/home/images/cnt_2/prt3.png"
                     className="d-block w-100 img-fluid"
                     alt="..."
                     style={{ maxHeight: "500px", objectFit: "cover" }}
@@ -557,15 +576,7 @@ export default function Home() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="/assets/home/images/cnt_2/g30.jpg"
-                    className="d-block w-100 img-fluid"
-                    alt="..."
-                    style={{ maxHeight: "500px", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/assets/home/images/cnt_2/g30.jpg"
+                    src="/assets/home/images/cnt_2/ptn1.png"
                     className="d-block w-100 img-fluid"
                     alt="..."
                     style={{ maxHeight: "500px", objectFit: "cover" }}
