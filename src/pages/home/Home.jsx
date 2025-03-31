@@ -353,9 +353,9 @@ export default function Home() {
         </section>
       </div>
       {/* Why Choose Us */}
-      <section className="why-choose-us container2 m-3">
-        <div className="container my-5">
-          <div className="row">
+      <section className="why-choose-us container2 m-4">
+        <div className="container my-1">
+          <div className="row"  >
             {/* Left Side: Why Choose Us */}
             <div className="col-md-7">
               <h5 className="text-muted">Why Choose Us?</h5>
@@ -446,7 +446,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid mt-5">
+      <div className="container-lg wid shad mar p-4 mt-5">
         <div className="row">
           {/* Left Section - Carousel */}
           <div className="col-lg-6">
