@@ -1,0 +1,42 @@
+/* Hero Section */
+.infra-hero {
+    background: black;
+    position: relative;
+    padding: 100px 0;
+  }
+  
+  .infra-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .infra-hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Facilities & Why Choose Us */
+  .bi {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .infra-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .infra-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Call to Action */
+  .cta {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  }
+  

@@ -1,0 +1,40 @@
+/* OurClients.css */
+.client-card {
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .client-avatar {
+    border: 2px solid #ff9800;
+    padding: 2px;
+  }
+  
+  .client-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .client-role {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .client-review {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .client-stars {
+    display: flex;
+    gap: 4px;
+  }
+  

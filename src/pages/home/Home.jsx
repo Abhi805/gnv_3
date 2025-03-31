@@ -266,48 +266,40 @@ export default function Home() {
       </div>
 
       {/* Our Services Section */}
-      <div
-        class="container-fluid shadow_112 container_2 pb-5 "
-        style={{ marginTop: "36px" }}
-      >
-        <p class="sub-title" style={{ fontSize: "45px", color: "#d90429" }}>
-          <u>Our services</u>
+      <div className="container-fluid shadow_112 container_2 pb-5" style={{ marginTop: "36px" }}>
+  <p className="sub-title text-center" style={{ fontSize: "clamp(24px, 4vw, 45px)", color: "#d90429" }}>
+    <u>Our Services</u>
+  </p>
+  <div className="row align-items-center">
+    {/* Left Content */}
+    <div className="col-lg-6 col-md-6 col-sm-12 px-md-4 px-sm-3">
+      <div className="section-pragraph text-start">
+        <h2 style={{ color: "#d90429" }} className="big-title">
+          <strong>
+            GnvIndia <br /> Entertainment
+          </strong>
+        </h2>
+        <h2 style={{ color: "#d90429" }} className="big-title">
+          <strong>No.1</strong> Events Management
+        </h2>
+        <p className="lorem mt-4 siz">
+          GNV INDIA ENTERTAINMENT is a Central India-based Event Management and Advertisement company. We are best in the industry
+          for providing international acts and artists...we also provide celebrities from Bollywood, TV actors, sports
+          personalities for all events appearances and all kinds of events etc.
         </p>
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-12 col-sm-12"
-            style={{ paddingRight: "60px", paddingLeft: "50px" }}
-          >
-            <div class="section-pragraph text-start">
-              <h2 style={{ color: "#d90429" }} class="big-title">
-                <strong>
-                  GnvIndia <br /> Entertainment
-                </strong>
-              </h2>
-              <h2 style={{ color: "#d90429" }} class="big-title">
-                <strong>No.1</strong> Events Management
-              </h2>
-              <p className="lorem mt-4 siz">
-                GNV INDIA ENTERTAINMENT is a Central India based Event
-                Management and Advertisement company. We are best in industry
-                for providing international acts and artists...we also provide
-                celebrities from Bollywood, tv actors, sports personalities for
-                all events appearances and all kind of events etc.
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-lg-6 col-md-12 col-sm-12"
-            style={{ paddingRight: "60px", paddingLeft: "65px" }}
-          >
-            <img
-              src="/assets/home/images/cnt_1/h91.webp"
-              className="d-block w-100"
-              alt="Slide 3"
-            />
-          </div>
-        </div>
       </div>
+    </div>
+    {/* Right Image */}
+    <div className="col-lg-6 col-md-6 col-sm-12 px-md-4 px-sm-3">
+      <img
+        src="/assets/home/images/cnt_1/h91.webp"
+        className="d-block w-100 img-fluid"
+        alt="Slide 3"
+      />
+    </div>
+  </div>
+</div>
+
       {/* container_3 Card */}
 
       <div className="container-fluid mt-5" style={{ width: "80%" }}>

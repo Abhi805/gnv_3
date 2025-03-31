@@ -11,9 +11,9 @@ const Navbar = () => {
         style={{ background: "white" }}
       >
         <div className="container-fluid ">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to='/'>
             <img src="/assets/logos/favicon.png" alt="Logo" height="40" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -30,43 +30,43 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link  style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link  style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/aboutUs">
                   About Us
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/ourTeam">
                   Our Team
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/infrastructure">
                   Infrastructure
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/services">
                   Services
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/whyUs">
                   Why Us
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/ourClients">
                   Our Clients
                 </Link>
               </li>
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/gallery">
                   Gallery
                 </Link>
               </li>
            
               <li className="nav-item  custom-link">
-                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/">
+                <Link style={{color:"#D90429"}} class="nav-link " aria-current="page" to="/contactUs">
                   Contact Us
                 </Link>
               </li>
