@@ -120,11 +120,11 @@ const cardData2 = [
 
 export default function Home() {
   return (
-    <div className="home" style={{ marginTop: "65px" }}>
-      <div className="container-lg shadow  py-4">
+    <div className="home" style={{ marginTop: "80px" }}>
+      <div className="container-fluid  shap py-4">
         <div className="row">
           {/* Logo Image on Left */}
-          <div className="col-md-6 text-start mt-4">
+          <div className="col-md-6 text-start mt-6">
             <h1
               style={{
                 color: "#D90429",
@@ -267,17 +267,17 @@ export default function Home() {
 
       {/* Our Services Section */}
       <div
-        class="container-fluid shadow_112 container_2 px-3"
+        class="container-fluid shadow_112 container_2 pb-5 "
         style={{ marginTop: "36px" }}
       >
-        <p class="sub-title">Our services</p>
+        <p class="sub-title" style={{fontSize:"45px",color:"#d90429"}}>Our services</p>
         <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-6 col-md-12 col-sm-12" style={{paddingRight:"60px",paddingLeft:"50px"}}>
             <div class="section-pragraph text-start">
               <h2 class="big-title">
                 <strong>No.1</strong> Events Management
               </h2>
-              <p className="lorem mt-4">
+              <p className="lorem mt-4 siz">
                 GNV INDIA ENTERTAINMENT is a Central India based Event
                 Management and Advertisement company. We are best in industry
                 for providing international acts and artists...we also provide
@@ -286,9 +286,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12" style={{paddingRight:"60px",paddingLeft:"65px"}}>
             <img
-              src="/assets/home/images/cnt_1/slider1.jpg"
+              src="/assets/home/images/cnt_1/h91.webp"
               className="d-block w-100"
               alt="Slide 3"
             />
@@ -332,7 +332,7 @@ export default function Home() {
               {cardData2.map((card, index2) => (
                 <div
                   key={index2}
-                  className="col-lg-3 col-md-4 col-sm-6 col-12 d-flex justify-content-center mb-4"
+                  className="col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center mb-4"
                 >
                   <div className="card2" style={{ width: "16rem" }}>
                     <img
@@ -355,7 +355,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="why-choose-us container2 m-4">
         <div className="container my-1">
-          <div className="row"  >
+          <div className="row">
             {/* Left Side: Why Choose Us */}
             <div className="col-md-7">
               <h5 className="text-muted">Why Choose Us?</h5>
@@ -446,176 +446,153 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-lg wid shad mar p-4 mt-5">
-        <div className="row">
-          {/* Left Section - Carousel */}
-          <div className="col-lg-6">
+      <div className="container-fluid shad mar p-5 ">
+        <div className="row d-flex justify-content-center">
+          {/* Left Section - First Carousel */}
+          <div className="col-lg-6 col-md-6 col-sm-12 mb-2">
             <div
               id="carouselExampleControls"
-              class="carousel slide"
+              className="carousel slide"
               data-bs-ride="carousel"
+         
+              data-bs-interval="1500"
+              data-bs-pause="false"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
                   <img
-                    src="/assets/home/images/cnt_2/g11.jpg"
-                    class="d-block w-100"
+                    src="/assets/home/images/cnt_1/h7.png"
+                    className="d-block w-100 img-fluid"
                     alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
                   />
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                   <img
-                    src="/assets/home/images/cnt_2/g32.jpg"
-                    class="d-block w-100"
+                    src="/assets/home/images/cnt_1/h20.webp"
+                    className="d-block w-100 img-fluid"
                     alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
                   />
                 </div>
-                <div class="carousel-item">
+                <div className="carousel-item">
                   <img
-                    src="/assets/home/images/cnt_2/g34.jpg"
-                    class="d-block w-100"
+                    src="/assets/home/images/cnt_1/h60.webp"
+                    className="d-block w-100 img-fluid"
                     alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
                   />
                 </div>
               </div>
               <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev"
               >
                 <span
-                  class="carousel-control-prev-icon"
+                  className="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
                 data-bs-target="#carouselExampleControls"
                 data-bs-slide="next"
               >
                 <span
-                  class="carousel-control-next-icon"
+                  className="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
           </div>
 
           {/* Right Section - Second Carousel */}
-          <div className="col">
-            <div className="row">
-              <div className="col col-img">
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            <div
+              id="carouselExampleIndicators"
+              className="carousel slide"
+              data-bs-ride="carousel"
+                data-bs-interval="2000"
+              data-bs-pause="false"
+              
+            >
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-            </div>
-            <div className="row">
-              <div className="col col-img">
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    src="/assets/home/images/cnt_2/g30.jpg"
+                    className="d-block w-100 img-fluid"
+                    alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="/assets/home/images/cnt_2/g30.jpg"
+                    className="d-block w-100 img-fluid"
+                    alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="/assets/home/images/cnt_2/g30.jpg"
+                    className="d-block w-100 img-fluid"
+                    alt="..."
+                    style={{ maxHeight: "500px", objectFit: "cover" }}
+                  />
+                </div>
               </div>
-            </div>{" "}
-            <div className="row">
-              <div className="col col-img">
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col col-img">
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col col-img-2 ">
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <img
-                  src="/assets/home/images/cnt_2/g11.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>

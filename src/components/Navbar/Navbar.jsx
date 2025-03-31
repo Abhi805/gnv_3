@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="container">
       <nav
         className=" navbar navbar-expand-lg navbar-light fixed-top shadow_111 "
-        style={{ top: "2px", background: "white" }}
+        style={{ background: "white" }}
       >
         <div className="container-fluid ">
           <a className="navbar-brand" href="#">
